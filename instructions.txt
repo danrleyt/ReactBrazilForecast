@@ -1,0 +1,35 @@
+Hi Danrley,
+
+Thank you for taking the time to talk to Mareike. 
+Here is the API exercise that she mentioned.
+
+This portion of the API gives you access to all the designs that are for sale in Spoonflower's marketplace.
+Using the language of your choice, build a small application using the API.
+What you build is completely up to you. Please don't spend more than 4 hours on this.
+It isn't meant to be an exhaustive project, just something to give us an idea of your current skills.
+
+Also, this API is not currently public and far from complete. So, if you have any questions, please don't hesitate to send me an email!
+
+Best,
+Stefanie
+
+http://search.spoonflower.com/admin/searchv2
+
+X-Auth-Token: 2m7srmasyo4rvbav4hp7aowarahgb3qrw3i50pesgbgo2b81ih
+
+Parameters
+q: The search term or terms
+offset: The starting index of the results (for pagination). The default is 0.
+limit: The maximum number of results to return. The default is 50.
+sort: The type of sort to use. One of classic, freshtastic, or relevant. The default is classic.
+availability: Whether designs should be for_sale (the default), not_for_sale, or all.
+substrate: If for sale, the substrate it should be for sale on. One of fabric, wallpaper, gift_wrap, or any. The default is any.
+view: Only return designs with the specified type of images: fabric or project. The default is nothing, which does not restrict the designs returned by type of images.
+filter: One of none (the default), connections, favorites, or user. If set, you should also set the user_id parameter.
+user_id: One of none (the default), connections, favorites, or user. If set, you should also set the filter parameter.
+color1: A color to search for in format #FFFFFF
+color2: A color to search for in format #FFFFFF
+color3: A color to search for in format #FFFFFF
+color4: A color to search for in format #FFFFFF
+location: A seller's location, such as city name or state or country name.
+jsonp: A jsonp callback function name - this is temporary and will be removed at some point. You can also use 'callback' for this parameter name.
